@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------------------------------------
+--------------------- PIC for PLASMA SIMULATION --------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+Software able to reproduce using object-oreinted programming tool, dynamics of non-collisional. low density plasma
+
+To compile the code using Make it's enough to type:
+	$ make
+while being in the Makefile folder.
+
+	$ make build
+and
+	$ make all
+produce the same result.
+
+
+To run the executable it's possible to use:
+	$ make run
+that is equivalent to type:
+	$ ./pic2d
+pic2d being the name of the executable.
+
+To clean there are two commands:
+	$ make clean
+removes all the object files created during the compilation,
+but keeps the executable and the output files;
+	$ make distclean
+calls clean and then removes also:
+	- the executable
+	- txt and csv output files that may be generated during execution
+	- png and fig files that can be generated using the graph.m script
+
+The software Matlab2018b (or equivalent) is necessary to run the
+graph.m script and produce the plots, but to obtain all the
+numerical results only a c++ compiler that supports the c++11 
+standard it's strictly necessary. 
+
+The code has been tested only with GNU Make and gcc, in particular using:
+ -the APC course VM 
+ -GNU Make 4.1, gcc 6.3 on Debian 9.
+
+
