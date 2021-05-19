@@ -2,7 +2,7 @@
 --------------------- PIC for PLASMA SIMULATION --------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-Software able to reproduce using object-oreinted programming tool, dynamics of non-collisional. low density plasma
+Software able to reproduce using object-oreinted programming tool, dynamics of non-collisional, low density plasma
 
 To compile the code using Make it's enough to type:
 	$ make
