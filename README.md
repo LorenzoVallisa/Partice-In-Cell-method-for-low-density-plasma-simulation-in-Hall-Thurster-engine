@@ -1,8 +1,9 @@
---------------------------------------------------------------------------------------------------------------
---------------------- PIC for PLASMA SIMULATION --------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
+# Partice In Cell method for low density plasma simulation in Hall-Thurster engine
 
-Software able to reproduce using object-oreinted programming tool, dynamics of non-collisional, low density plasma
+Software able to reproduce using object-oreinted programming tool, dynamics of non-collisional, low density plasma. Ions dynamics is studied through Largangian equation
+of momentum and interact with agglomerates of electrons that generate an electrostatic field, whose potential is used eventually to compute the elctric field thath moves ions.
+
+**Installation** 
 
 To compile the code using Make it's enough to type:
 	$ make
@@ -13,6 +14,7 @@ and
 	$ make all
 produce the same result.
 
+**Execution** 
 
 To run the executable it's possible to use:
 	$ make run
@@ -29,6 +31,8 @@ calls clean and then removes also:
 	- the executable
 	- txt and csv output files that may be generated during execution
 	- png and fig files that can be generated using the graph.m script
+
+**NOTE THAT**
 
 The software Matlab2018b (or equivalent) is necessary to run the
 graph.m script and produce the plots, but to obtain all the
